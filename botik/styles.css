@@ -1,0 +1,142 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #fdfbfb;
+    border-radius: 30px;
+}
+
+.container1 {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #fdfbfb;
+    border-radius: 30px;
+} 
+
+/* Круглая аватарка */
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px #fff, 0 0 30px #fff;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #fff, 0 0 40px #fff;
+}
+
+/* Неоновый заголовок */
+.neon-title {
+    font-size: 2.8em;
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #fff;
+    margin-bottom: 20px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Неоновый текст */
+.neon-text {
+    font-size: 1em;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    margin-bottom: 20px;
+}
+
+/* Кнопки */
+.nav-buttons {
+    margin-bottom: 40px;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.neon-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 30px;
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.neon-button.active {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+}
+
+/* Поля ввода */
+.neon-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    background: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1em;
+    display: block;
+    border-radius: 5px;
+}
+
+.neon-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #fff;
+}
+
+textarea.neon-input {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Анимация свечения */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    }
+    to {
+        text-shadow: 0 0 15px #fff, 0 0 25px #fff, 0 0 35px #fff;
+    }
+}
+
+/* Анимация появления */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.content {
+    animation: fadeIn 1.5s ease-in;
+}
