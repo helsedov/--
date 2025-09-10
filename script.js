@@ -1,3 +1,13 @@
+// Переворот аватарки при клике
+document.addEventListener("DOMContentLoaded", function () {
+    const avatarCard = document.getElementById('avatarCard');
+    if (avatarCard) {
+        avatarCard.addEventListener('click', function() {
+            this.classList.toggle('flipped');
+        });
+    }
+});
+
 // Анимация при загрузке страницы
 document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll('.container > *');
@@ -34,3 +44,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
