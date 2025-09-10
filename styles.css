@@ -26,6 +26,49 @@ body {
 } 
 
 /* Круглая аватарка */
+
+/* Контейнер для аватарки с переворотом */
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    perspective: 1000px;
+}
+
+.avatar-card {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+.avatar-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.avatar-front, .avatar-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-back {
+    transform: rotateY(180deg);
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px #fff, 0 0 30px #fff;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
 .avatar-container {
     display: flex;
     justify-content: center;
@@ -140,3 +183,4 @@ textarea.neon-input {
 .content {
     animation: fadeIn 1.5s ease-in;
 }
+
