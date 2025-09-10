@@ -33,8 +33,7 @@ body {
     justify-content: center;
     margin-bottom: 30px;
     perspective: 1000px;
-    box-shadow: 0 0 15px #fff, 0 0 30px #fff;
-    object-fit: cover;
+    
 }
 
 .avatar-card {
@@ -59,8 +58,7 @@ body {
     backface-visibility: hidden;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 15px #fff, 0 0 30px #fff;
-    object-fit: cover;
+     
 }
 
 .avatar-back {
@@ -189,5 +187,6 @@ textarea.neon-input {
 .content {
     animation: fadeIn 1.5s ease-in;
 }
+
 
 
