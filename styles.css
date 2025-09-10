@@ -23,6 +23,7 @@ body {
     text-align: center;
     border: 3px solid #fdfbfb;
     border-radius: 30px;
+    animation: fadeIn 1.5s ease-in;
 } 
 
 /* Круглая аватарка */
@@ -185,6 +186,7 @@ textarea.neon-input {
 .content {
     animation: fadeIn 1.5s ease-in;
 }
+
 
 
 
